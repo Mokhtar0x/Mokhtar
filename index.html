@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة مختار</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #0d0f23;
+      color: white;
+    }
+
+    header, footer {
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 24px;
+      background: linear-gradient(90deg, #fc00ff, #00dbde);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientShift 3s ease-in-out infinite;
+      background-size: 200% 200%;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .main img {
+      width: 150px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #4e1fff;
+    }
+
+    .typing {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 30px 0 10px;
+      background: linear-gradient(90deg, #00dbde, #fc00ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #00dbde;
+      width: 0;
+      animation: typing 5s steps(20) 1 forwards, blink 0.8s infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 22ch; }
+    }
+
+    @keyframes blink {
+      0%, 100% { border-color: transparent; }
+      50% { border-color: #00dbde; }
+    }
+
+    h2 {
+      font-size: 24px;
+      margin: 0 0 20px;
+    }
+
+    .btn {
+      background: linear-gradient(90deg, #fc00ff, #00dbde);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 20px;
+      font-family: Tajwal;
+      font-weight: 199;
+      
+    }
+
+    .desc {
+      max-width: 600px;
+      font-size: 18px;
+      margin: 40px auto;
+      color: #c0c0c0;
+    }
+
+    footer {
+      border-top: 1px solid #333;
+      flex-wrap: wrap;
+    }
+
+    .contact-info {
+      font-size: 14px;
+    }
+
+    .social {
+      margin-top: 10px;
+    }
+
+    .social i {
+      margin: 0 5px;
+      font-size: 18px;
+    }
+
+    @media (min-width: 768px) {
+      .main {
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+        text-align: right;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">♕ منصة مختار</div>
+  </header>
+
+  <section class="main">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCpc0g0so0QE5xEnmsZyfLTUDhf_4jDOpp8cC8XCHWI1SDDHw3BG9SDaI&s=10" alt="businessman" />
+    <div>
+      <div class="typing">يلا نعمل شوية فلوس!</div>
+      <br>
+      <button class="btn">اعرف المزيد</button>
+    </div>
+  </section>
+
+  <div class="desc">
+    منصة مختار هو موقع ناشئ لربح المال من خلال إنشاء الحسابات على فيسبوك وإنستجرام وغيرها. في المستقبل تابع موقعنا للحصول على كل جديد.
+  </div>
+
+  <footer>
+    <div>
+      <div class="logo">منصة مختار</div>
+      <div class="contact-info">
+        منصة مصرية<br>
+        011-211-7000<br>
+        mokhtar.abdelkreem.nasr@gmail.com
+      </div>
+    </div>
+    <div class="social">
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+    </div>
+  </footer>
+
+</body>
+</html>
